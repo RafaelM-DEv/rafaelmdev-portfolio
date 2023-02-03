@@ -6,7 +6,7 @@ import Paper from '@mui/material/Paper';
 
 function BlogSkill (props) {
   return (
-    <div className="grid grid-cols-12 text-white px-2 items-center">
+    <div className="grid grid-cols-12 text-slate-200 px-2 items-center">
       <div className='col-span-1'>
          <img src={props.icon} alt="VueJs icon" className='w-28' />
       </div>

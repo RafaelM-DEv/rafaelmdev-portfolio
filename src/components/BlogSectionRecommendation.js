@@ -1,7 +1,9 @@
 function BlogSectionRecommendation () {
   return (
-    <section>
-    BlogSectionRecommendation
+    <section className="flex justify-center py-12 bg-slate-600">
+    <div className="container text-slate-200">
+          BlogSectionRecommendation
+      </div>
     </section>
   )
 }

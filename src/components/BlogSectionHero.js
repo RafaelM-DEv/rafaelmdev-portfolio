@@ -36,17 +36,19 @@ function BlogSectionHero () {
     <Parallax blur={5} bgImage={BackgroundImage} bgImageAlt="bricks wall" strength={500}>
       <div className='w-screen flex justify-center section h-[520px] px-2 pt-10'>
         <div className="container pt-12 flex items-center justify-between">
-          <div className="text-white font-bold text-4xl">
+          <div className="text-slate-200 font-bold text-4xl">
             RafaelM-DEv
             <p className="text-xl font-normal w-96 my-6">
                 Olá, me chamo Rafael Martins e sou desenvolvedor front-end  há 3 anos e formado em Analise e desenvolvimento de sistemas!
             </p>
-            <div className='flex justify-center'>
+            <div className='flex justify-center px-6'>
                 { stackList }
             </div>
           </div>
           <div className='flex justify-end'>
-            <img src={imagePerfil} alt="imagem de perfil" className='w-[75%]'/>
+          <Tippy content="Hello World!" placement='top' theme='light'>
+              <img src={imagePerfil} alt="imagem de perfil" className='w-[75%]'/>
+          </Tippy>
           </div>
         </div>
       </div>

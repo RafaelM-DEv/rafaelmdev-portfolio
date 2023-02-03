@@ -25,7 +25,7 @@ function BlogSectionHardSkills () {
   return (
     <section className="bg-slate-600 flex justify-center py-12">
       <div className="container">
-          <h1 className="font-bold text-white text-4xl px-2">
+          <h1 className="font-bold text-slate-200 text-4xl px-2">
               Hard Skills
           </h1>
           <div className="pt-6 flex flex-col gap-6">

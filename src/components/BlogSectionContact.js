@@ -1,7 +1,9 @@
 function BlogSectionContact () {
   return (
-    <section>
+    <section className="flex justify-center py-12 bg-slate-200">
+    <div className="container">
     BlogSectionContact
+    </div>
     </section>
   )
 }

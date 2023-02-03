@@ -2,9 +2,9 @@ import BlogCard from "./BlogCard"
 
 function BlogSectionProjects () {
   return (
-    <section className="flex justify-center py-12 bg-slate-600 ">
+    <section className="flex justify-center py-12 bg-slate-200">
       <div className="container">
-        <h1 className="font-bold  text-4xl px-2 pb-6 text-white">
+        <h1 className="font-bold  text-4xl px-2 pb-6 text-slate-600">
             Projetos
         </h1>
         <div className="gap-2 grid grid-cols-12">

@@ -10,7 +10,7 @@ function ImageCard(props) {
       <CardActionArea className='h-full flex flex-col justify-between'>
         <CardMedia
           component="img"
-          className='w-44 h-48'
+          className='h-40'
           image={props.image}
           alt={props.imageAlt}
         />

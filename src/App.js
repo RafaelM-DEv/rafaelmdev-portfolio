@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import BlogHeader  from './components/BlogHeader.js'
+import BlogSectionHero from './components/BlogSectionHero.js'
+import BlogSectionHardSkills from './components/BlogSectionHardSkills.js'
+import BlogSectionSoftSkills from './components/BlogSectionSoftSkills.js'
+import BlogSectionProjects from './components/BlogSectionProjects.js'
+import BlogSectionRecommendation from './components/BlogSectionRecommendation.js'
+import BlogSectionContact from './components/BlogSectionContact.js'
+import BlogSectionBlog from './components/BlogSectionBlog.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <BlogHeader />
+        <BlogSectionHero />
+        <BlogSectionBlog />
+        <BlogSectionHardSkills />
+        <BlogSectionSoftSkills />
+        <BlogSectionProjects />
+        <BlogSectionRecommendation />
+        <BlogSectionContact />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App()

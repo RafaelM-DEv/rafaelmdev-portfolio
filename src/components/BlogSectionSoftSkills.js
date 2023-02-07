@@ -8,8 +8,8 @@ import BackgroundImage from '../assets/bricks.png'
 
 function BlogSectionSoftSkills () {
   return (
-    <Parallax blur={5} bgImage={BackgroundImage} bgImageAlt="brick wall" strength={500}>
-      <section className="flex justify-center py-12 ">
+    <Parallax blur={9} bgImage={BackgroundImage} bgImageAlt="brick wall" strength={600} className='shadow-2xl shadow-blue-400 border-b-[1px] border-blue-200'>
+      <section className="flex justify-center py-20">
         <div className="container">
             <h1 className="font-bold  text-4xl px-2 flex justify-center pb-6 text-slate-200">
                 Soft Skills
@@ -23,7 +23,7 @@ function BlogSectionSoftSkills () {
               </div>
               <div className='col-span-1'>
                 <Tippy content="Café?" placement='top' theme='light'>
-                  <img src={imageDev} alt='icone de dev' />
+                  <img src={imageDev} alt='ícone de dev' />
                 </Tippy>
               </div>
               <div className='pl-2 col-span-2 gap-14 flex flex-col font-bold text-slate-200'>

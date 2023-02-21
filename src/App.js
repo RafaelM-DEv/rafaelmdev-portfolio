@@ -14,11 +14,11 @@ function App() {
         <BlogSectionBlog />
         <BlogSectionHardSkills />
         <BlogSectionSoftSkills />
-        <BlogSectionRecommendation />
+    
         <BlogSectionProjects />
         <BlogSectionContact />
       </div>
   )
 }
-
+    // <BlogSectionRecommendation />
 export default App

@@ -37,17 +37,17 @@ const posts = [
 ]
 
 const articles = posts.map((post, index) =>
-  <BlogCard key={index} id={post.id} className=' col-span-4 hover:shadow-xl hover:shadow-blue-400 card-blog h-96 relative' title={post.title} resume={post.resume} image={post.image} />
+  <BlogCard key={index} id={post.id} className='col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4 xl:col-span-4 my-6 hover:shadow-xl hover:shadow-blue-400 card-blog h-96 relative' title={post.title} resume={post.resume} image={post.image} />
 )
 
 function BlogSectionBlog () {
   return (
-    <section className="bg-slate-200 flex justify-center py-6">
+    <section className="bg-slate-200 flex justify-center py-12">
       <div className="container text-slate-600 px-2">
           <h1 className="font-bold text-4xl animation-shine bg-slate-600">
               BLOG
           </h1>
-          <div className="pt-6">
+          <div className="pt-6 text-2xl">
             Artigos em Destaques
           </div>
           <div className="pt-6 grid grid-cols-12 gap-x-3">

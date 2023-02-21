@@ -8,7 +8,7 @@ import BackgroundImage from '../assets/bricks.png'
 
 function BlogSectionSoftSkills () {
   return (
-    <Parallax blur={9} bgImage={BackgroundImage} bgImageAlt="brick wall" strength={600} className='shadow-2xl shadow-blue-400 border-b-[1px] border-blue-200'>
+    <Parallax blur={9} bgImage={BackgroundImage} bgImageAlt="brick wall" strength={400}>
       <section className="flex justify-center py-20">
         <div className="container">
             <h1 className="font-bold  text-4xl px-2 flex justify-center pb-6 text-slate-200">

@@ -1,6 +1,7 @@
 import BlogCard from "./BlogCard"
 
 function BlogSectionProjects () {
+  // TODO revisar layout dos cards e add uma descrição / resumo sobre o projeto, usar tbm as tecnologias usadas em badges (chips) no final do card
   return (
     <section id="project" className="flex justify-center py-16 bg-slate-200">
       <div className="container">

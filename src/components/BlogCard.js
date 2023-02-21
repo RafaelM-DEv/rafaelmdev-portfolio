@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function ImageCard(props) {
   return ( 
     <Link to={`blog/${props.id}`} className={props.className}>
-      <Card sx={{ maxWidth: 345, height: 385 }}>
+      <Card sx={{ height: 385 }}>
         <CardActionArea className='h-full flex flex-col justify-between'>
           <CardMedia component="img" className='h-40' image={props.image} alt={props.imageAlt} />
           <CardContent className='h-full'>
@@ -28,7 +28,7 @@ function ImageCard(props) {
 function SingleCard(props) {
   return (
     <Link to={'#'} className={props.className}>
-      <Card sx={{ maxWidth: 345, height: 110 }} >
+      <Card sx={{ height: 110 }} >
         <CardActionArea className='h-full'>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">

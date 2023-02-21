@@ -1,6 +1,7 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 function BlogHeader () {
+  // TODO add o menu do material UI
   return (
     <div className='bg-gray-600 flex justify-center w-screen h-auto border-b-2 border-blue-600 px-2'>
       <header className="container items-center flex justify-between text-slate-200 h-16">

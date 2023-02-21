@@ -29,7 +29,7 @@ const stackList = stack.map((item, index) =>
 
 function BlogSectionHero () {
   return (
-    <Parallax blur={9} bgImage={BackgroundImage} bgImageAlt="bricks wall" strength={500}>
+    <Parallax blur={9} bgImage={BackgroundImage} bgImageAlt="bricks wall" strength={400}>
       <div className='w-screen flex justify-center section h-[520px] px-2 pt-10'>
         <div className="container pt-12 flex items-center justify-between">
           <div className="text-slate-200 font-bold text-4xl">

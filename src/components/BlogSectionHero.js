@@ -23,28 +23,28 @@ const stack = [
 
 const stackList = stack.map((item, index) => 
 <Tippy content={item.tippyContent} placement='bottom' theme='light' key={index}>
-    <img src={item.icon} alt={item.alt} className='w-20'/>
+    <img src={item.icon} alt={item.alt} className='w-20 col-span-4 md:col-span-2'/>
 </Tippy>
 )
 
 function BlogSectionHero () {
   return (
-    <Parallax blur={9} bgImage={BackgroundImage} bgImageAlt="bricks wall" strength={400}>
-      <div className='w-screen flex justify-center section h-[520px] px-2 pt-10'>
-        <div className="container pt-12 flex items-center justify-between">
+    <Parallax blur={2} bgImage={BackgroundImage} bgImageAlt="bricks wall" strength={400}>
+      <div className='w-screen flex h-[500px] justify-center section px-2 pt-10'>
+        <div className=" pt-12 flex items-center justify-center md:justify-between px-10">
           <div className="text-slate-200 font-bold text-4xl">
             RafaelM-DEv
             <p className="text-xl font-normal w-96 my-6">
                 Olá, me chamo Rafael Martins e sou desenvolvedor <strong className='bg-blue-600 px-1'>front-end</strong>  há 3 anos e formado em Análise e desenvolvimento de sistemas!
             </p>
-            <div className='flex justify-center px-6'>
+            <div className='grid grid-cols-12 px-6'>
                 { stackList }
             </div>
           </div>
-          <div className='flex justify-end'>
-          <Tippy content="Hello World!" placement='top' theme='light'>
-              <img src={imagePerfil} alt="imagem de perfil" className='w-[75%]'/>
-          </Tippy>
+          <div className='justify-end hidden md:flex'>
+            <Tippy content="Hello World!" placement='top' theme='light'>
+                <img src={imagePerfil} alt="imagem de perfil" className='w-[400px]'/>
+            </Tippy>
           </div>
         </div>
       </div>

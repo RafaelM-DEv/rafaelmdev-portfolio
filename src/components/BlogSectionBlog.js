@@ -37,8 +37,11 @@ const posts = [
 ]
 
 const articles = posts.map((post, index) =>
-  <BlogCard key={index} id={post.id} className='col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4 xl:col-span-4 my-6 hover:shadow-xl hover:shadow-blue-400 card-blog h-96 relative' title={post.title} resume={post.resume} image={post.image} />
+  <BlogCard key={index} id={post.id} className='col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-4 xl:col-span-4 my-6 hover:shadow-xl hover:shadow-blue-400 card-blog h-96 relative' 
+            title={post.title} resume={post.resume} image={post.image} />
 )
+
+// TODO esconder o ver mais até a section ficar pronta
 
 function BlogSectionBlog () {
   return (
@@ -53,7 +56,7 @@ function BlogSectionBlog () {
           <div className="pt-6 grid grid-cols-12 gap-x-3">
           { articles }
           </div>
-          <div className="flex pt-6 justify-end">
+          <div className="hidden pt-6 justify-end">
             <Button variant="text" endIcon={<ArrowRightIcon color="secondary" />}>
               <div className="text-slate-600 font-semibold"> Ver Mais </div>
             </Button>

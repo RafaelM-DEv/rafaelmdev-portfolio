@@ -1,4 +1,3 @@
-// import BlogHeader  from './components/BlogHeader.js'
 import BlogSectionHero from './components/BlogSectionHero.js'
 import BlogSectionHardSkills from './components/BlogSectionHardSkills.js'
 import BlogSectionSoftSkills from './components/BlogSectionSoftSkills.js'
@@ -9,16 +8,15 @@ import BlogSectionBlog from './components/BlogSectionBlog.js'
 
 function App() {
   return (
-      <div>
+      <span>
         <BlogSectionHero />
         <BlogSectionBlog />
         <BlogSectionHardSkills />
         <BlogSectionSoftSkills />
-    
+        <BlogSectionRecommendation />
         <BlogSectionProjects />
         <BlogSectionContact />
-      </div>
+      </span>
   )
 }
-    // <BlogSectionRecommendation />
 export default App

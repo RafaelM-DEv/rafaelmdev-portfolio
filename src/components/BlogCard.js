@@ -12,11 +12,11 @@ function ImageCard(props) {
         <CardActionArea className='h-full flex flex-col justify-between'>
           <CardMedia component="img" className='h-40' image={props.image} alt={props.imageAlt} />
           <CardContent className='h-full'>
-            <Typography gutterBottom variant="h5" component="div">
-              {props.title}
+            <Typography gutterBottom variant="h5" component="div" className='font-bold'>
+              { props.title }
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {props.resume}
+              { props.resume }
             </Typography>
           </CardContent>
         </CardActionArea>

@@ -20,9 +20,9 @@ const listSkills = skills.map((skill, index) =>
     <BlogSkill key={index} title={skill.title} description={skill.description} progress={skill.progress} icon={skill.icon} />
 )
 
-function BlogSectionHardSkills () {
+function BlogSectionHardSkills (props) {
   return (
-    <section className="bg-slate-200 flex justify-center py-12">
+    <section ref={props.toRef} className="bg-slate-200 flex justify-center py-12">
       <div className="container text-slate-600">
           <h1 className="font-bold text-slate-600 text-4xl px-2">
               Hard Skills

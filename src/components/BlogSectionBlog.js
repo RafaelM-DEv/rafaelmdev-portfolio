@@ -43,9 +43,9 @@ const articles = posts.map((post, index) =>
 
 // TODO esconder o ver mais até a section ficar pronta
 
-function BlogSectionBlog () {
-  return (
-    <section className="bg-slate-200 flex justify-center py-12">
+function BlogSectionBlog (props) {
+     return (
+    <section ref={props.toRef} className="bg-slate-200 flex justify-center py-12">
       <div className="container text-slate-600 px-2">
           <h1 className="font-bold text-4xl animation-shine bg-slate-600">
               BLOG

@@ -6,10 +6,10 @@ import { Parallax } from 'react-parallax';
 import imageDev from '../assets/dev.png'
 import BackgroundImage from '../assets/bricks.png'
 
-function BlogSectionSoftSkills () {
+function BlogSectionSoftSkills (props) {
   return (
     <Parallax blur={9} bgImage={BackgroundImage} bgImageAlt="brick wall" strength={400}>
-      <section className="flex justify-center py-20">
+      <section ref={props.toRef} className="flex justify-center py-20">
         <div className="container">
             <h1 className="font-bold  text-4xl px-2 flex justify-center pb-6 text-slate-200">
                 Soft Skills

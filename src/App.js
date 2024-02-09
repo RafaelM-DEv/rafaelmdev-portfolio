@@ -5,17 +5,30 @@ import BlogSectionProjects from './components/BlogSectionProjects.js'
 import BlogSectionRecommendation from './components/BlogSectionRecommendation.js'
 import BlogSectionContact from './components/BlogSectionContact.js'
 import BlogSectionBlog from './components/BlogSectionBlog.js'
+import BlogHeader from './components/BlogHeader'
+import { useRef } from 'react';
 
 function App() {
+
+  const blogRef = useRef(null);
+  const hardSkillRef = useRef(null);
+  const softSkillRef = useRef(null);
+  const recommendRef = useRef(null);
+  const projectRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToRefs = [blogRef, hardSkillRef, softSkillRef, projectRef, recommendRef, contactRef];
+
   return (
-      <span>
+    <span>
+        <BlogHeader scrollToRefs={scrollToRefs} />
         <BlogSectionHero />
-        <BlogSectionBlog />
-        <BlogSectionHardSkills />
-        <BlogSectionSoftSkills />
-        <BlogSectionRecommendation />
-        <BlogSectionProjects />
-        <BlogSectionContact />
+        <BlogSectionBlog toRef={blogRef}/>
+        <BlogSectionHardSkills toRef={hardSkillRef}/>
+        <BlogSectionSoftSkills toRef={softSkillRef}/>
+        <BlogSectionRecommendation toRef={recommendRef}/>
+        <BlogSectionProjects toRef={projectRef}/>
+        <BlogSectionContact toRef={contactRef}/>
       </span>
   )
 }

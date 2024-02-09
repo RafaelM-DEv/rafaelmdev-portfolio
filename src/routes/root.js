@@ -1,11 +1,13 @@
-import BlogHeader from '../components/BlogHeader'
+// import BlogHeader from '../components/BlogHeader'
 import { Outlet } from "react-router-dom";
-
+// import { useRef } from "react"
 // import App from '../App.js'
+
 function layout () {
+  // const blogRef = useRef<HTMLDivElement | null>(null)
+  // <BlogHeader toReference={blogRef}/>
   return (
     <div className='relative'>
-      <BlogHeader />
       <div id='detail'>
         <Outlet />
       </div>

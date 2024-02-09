@@ -6,16 +6,23 @@ const quotes = [
   {
     content: 'Cara responsável, dedicado e pontual. Indico ele para qualquer pessoa que busca alguém comprometido com o trabalho!',
     author: 'Jennifer Guarnieri - Social Media'
+  },
+  {
+  content: 'Excelente trabalho em equipe, sempre disposto a ajudar e contribuir positivamente para o sucesso do projeto. Recomendo sem hesitação!',
+  author: 'Ana Silva - Gerente de Projetos'
+  },
+  {
+  content: 'Profissional altamente competente e comprometido. Sempre entrega resultados de alta qualidade dentro dos prazos estabelecidos. Uma excelente adição a qualquer equipe!',
+  author: 'Pedro Santos - Desenvolvedor Sênior'
+  },
+  {
+  content: 'Grande capacidade de liderança e resolução de problemas. Suas habilidades técnicas combinadas com sua atitude proativa o tornam uma peça fundamental em qualquer projeto.',
+  author: 'Mariana Oliveira - CEO'
+  },
+  {
+  content: 'Pessoa confiável e confiável, com uma ética de trabalho impecável. Sempre demonstrou um alto nível de profissionalismo em todas as interações.',
+  author: 'Lucas Costa - Analista de Sistemas'
   }
-  // {
-
-  //   content: 'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.',
-  //   author: 'Jennifer Guarnieri'
-  // },
-  // {
-  //   content: 'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.',
-  //   author: 'Jennifer Guarnieri'
-  // }
 ]
 
 const BlogQuotes = quotes.map((quote, index) => 
@@ -32,9 +39,9 @@ const BlogQuotes = quotes.map((quote, index) =>
   </div>
 )
 
-function BlogSectionRecommendation () {
+function BlogSectionRecommendation (props) {
   return (
-    <section className="flex justify-center py-20 bg-slate-200">
+    <section ref={props.toRef} className="flex justify-center py-20 bg-slate-200">
       <div className="container text-slate-600">
         <Typography variant="h5" className='italic text-center pb-12'>
          - Depoimentos de pessoas que já trabalharam comigo -

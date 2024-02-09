@@ -10,8 +10,8 @@ function ImageCard(props) {
     <Link to={`blog/${props.id}`} className={props.className}>
       <Card sx={{ height: 385 }}>
         <CardActionArea className='h-full flex flex-col justify-between'>
-          <CardMedia component="img" className='h-40' image={props.image} alt={props.imageAlt} />
-          <CardContent className='h-full'>
+          <CardMedia component="img" className='h-50' image={props.image} alt={props.imageAlt} />
+          <CardContent className='h-full mt-5'>
             <Typography gutterBottom variant="h5" component="div" className='font-bold'>
               { props.title }
             </Typography>
@@ -27,11 +27,11 @@ function ImageCard(props) {
 
 function SingleCard(props) {
   return (
-    <Link to={'#'} className={props.className}>
+    <Link to={`https://${props.link}`} target='_blank' className={props.className}>
       <Card sx={{ height: 110 }} >
         <CardActionArea className='h-full'>
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography gutterBottom component="div">
               {props.title}
             </Typography>
             <Typography variant="body2" color="text.secondary">
@@ -49,7 +49,7 @@ function BlogCard (props) {
     return <ImageCard title={props.title} image={props.image} resume={props.resume}  className={props.className} id={props.id}/>
   }
 
-  return <SingleCard title={props.title} image={props.image} resume={props.resume}  className={props.className} id={props.id} />
+  return <SingleCard title={props.title} image={props.image} resume={props.resume} link={props.link} className={props.className} id={props.id} />
 }
 
 export default BlogCard

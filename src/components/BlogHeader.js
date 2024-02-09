@@ -12,19 +12,22 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-
 const drawerWidth = 240;
-
 const navItems = ['Blog', 'Hard Skills', 'Soft Skills', 'Projetos', 'Recomendações', 'Contato'];
 function DrawerAppBar(props) {
-  const { window } = props;
+  const { window, scrollToRefs } = props;
   const [open, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
+  };
+
+  const handleClick = (index) => {
+    if (scrollToRefs[index].current) {
+      scrollToRefs[index].current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   const drawer = (
@@ -34,9 +37,9 @@ function DrawerAppBar(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+        {navItems.map((item, index) => (
+          <ListItem key={index} disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => handleClick(index)}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -46,7 +49,7 @@ function DrawerAppBar(props) {
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
-
+  
   return (
     <Box sx={{ display: 'flex' }}>
       <AppBar component="nav">
@@ -66,12 +69,12 @@ function DrawerAppBar(props) {
           </Typography>
 
           <Box sx={{ display: { xs: 'none', md: 'block' } }} >
-            {navItems.map((item) => (
-              <a key={item} href='/#'>
+            {navItems.map((item, index) => (
+              <span className='cursor-pointer' key={index} onClick={() => handleClick(index)}>
                 <span className='capitalize hover:text-purple-400 px-3 font-semibold text-lg'>
                   { item }
                 </span>
-              </a>
+              </span>
             ))}
           </Box>
 
@@ -102,6 +105,7 @@ DrawerAppBar.propTypes = {
    * You won't need it on your project.
    */
   window: PropTypes.func,
+  scrollToRefs: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default DrawerAppBar;

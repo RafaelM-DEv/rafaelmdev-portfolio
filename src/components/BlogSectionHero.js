@@ -35,7 +35,7 @@ function BlogSectionHero () {
           <div className="text-slate-200 font-bold text-4xl">
             RafaelM-DEv
             <p className="text-xl font-normal w-96 my-6">
-                Olá, me chamo Rafael Martins e sou desenvolvedor <strong className='bg-blue-600 px-1'>front-end</strong>  há 3 anos e formado em Análise e desenvolvimento de sistemas!
+                Olá, me chamo Rafael Martins e sou desenvolvedor <strong className='bg-blue-600 px-1'>front-end</strong>  há 5 anos e formado em Análise e desenvolvimento de sistemas!
             </p>
             <div className='grid grid-cols-12 px-6'>
                 { stackList }

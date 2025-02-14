@@ -90,10 +90,10 @@ function BlogSectionHardSkills(props) {
   return (
     <section
       ref={props.toRef}
-      className="bg-slate-200 flex justify-center py-12"
+      className="bg-background flex justify-center py-12"
     >
       <div className="container text-slate-600">
-        <h1 className="font-bold text-slate-600 text-4xl px-2">Hard Skills</h1>
+        <h1 className="font-bold text-white text-4xl px-2">Hard Skills</h1>
         <div className="pt-6 flex flex-col gap-6">{listSkills}</div>
       </div>
     </section>

@@ -12,10 +12,9 @@ function BlogSectionContact(props) {
   return (
     <section
       ref={props.toRef}
-      className="flex justify-center py-12 bg-slate-600 text-slate-200"
+      className="flex justify-center py-12 bg-background text-slate-200"
     >
       <div className="container">
-        <div className="flex gap-x-8 justify-center pb-6"> Contato </div>
         <div className="flex gap-x-8 justify-center pb-6">
           <Link
             to={"https://www.facebook.com/Far3ll274/"}

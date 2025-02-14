@@ -5,10 +5,10 @@ function BlogSectionProjects(props) {
     <section
       ref={props.toRef}
       id="project"
-      className="flex justify-center py-8 md:py-16 bg-slate-200"
+      className="flex justify-center py-8 md:py-16 bg-background"
     >
       <div className="container px-4 md:px-0">
-        <h1 className="font-bold text-3xl md:text-4xl pb-8 md:pb-12 text-slate-600">
+        <h1 className="font-bold text-3xl md:text-4xl pb-8 md:pb-12 text-white">
           Principais Projetos
         </h1>
         <div className="gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

@@ -40,13 +40,11 @@ function BlogSectionBlog(props) {
   return (
     <section
       ref={props.toRef}
-      className="bg-slate-200 flex justify-center py-8 sm:py-12 md:py-16 lg:py-20"
+      className="bg-background flex justify-center py-8 sm:py-12 md:py-16 lg:py-20"
     >
       <div className="container text-slate-600 px-4 sm:px-6 md:px-8">
-        <h1 className="font-bold text-3xl sm:text-4xl animation-shine bg-slate-600">
-          BLOG
-        </h1>
-        <div className="pt-4 sm:pt-6 text-xl sm:text-2xl">
+        <h1 className="font-bold text-4xl sm:text-4xl text-white">BLOG</h1>
+        <div className="pt-4 sm:pt-6 text-xl sm:text-2xl text-white">
           Artigos em Destaques
         </div>
         <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
